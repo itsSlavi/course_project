@@ -4,7 +4,6 @@ const API = axios.create({
   baseURL: "http://localhost:5000/api",
 });
 
-// 🟢 Автоматично добавяне на токена
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
   console.log("🔑 Token в localStorage:", token);
