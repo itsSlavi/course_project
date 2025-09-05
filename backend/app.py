@@ -10,7 +10,6 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
 
-    # 🟢 временно отваряме CORS за всички
     CORS(app,
          resources={r"/*": {"origins": "*"}},
          supports_credentials=True,
