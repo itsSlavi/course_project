@@ -54,7 +54,7 @@ def login():
     }), 200
 
 
-# 🟢 Профил (пример за защитен рут)
+# 🟢 Профил
 @auth_bp.route("/profile", methods=["GET"])
 @jwt_required()
 def profile():
